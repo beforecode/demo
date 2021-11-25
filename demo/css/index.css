@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	background-color: #3a3a3a;
+	color: #fff;
+	height: 100vh;
+}
+a {
+	text-decoration: none;
+}
+button {
+	cursor: pointer;
+}
+/*________________main container__________*/
+.main-container {
+	border: 1px solid red;
+	width: 80%;
+	height: 500px;
+}
+.child {
+	/*display: flex;*/
+	border: 1px solid green;
+	height: 100%;
+	width: 100%;
+}
+/*________________login_____________*/
+#login {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 400px;
+	margin: 0 auto;
+}
+#login form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	border: 1px solid blue;
+	height: 150px;
+}
+#login form  input {
+	width: 100%;
+}
+#login form > div {
+	border: 1px solid red;	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+#login form button {
+
+}
+#login form a {
+
+}
+.login-note {
+	border: 1px solid red;
+	width:80%;
+	padding: 40px 0;
+	margin: 0 auto;
+}
+.login-error-container {
+	border: 1px solid red;
+	height: 50px;
+	width: 80%;
+	margin:0 auto;
+}
+.login-error-container .error {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	border: 1px solid red;
+	height: 100%;
+}
+
+/*=================== Media Queries ===========*/
+@media (max-width: 800px) {
+	.main-container {
+		width: 100%;
+	}
+	.login-error-container {
+		width: 100%;
+	}
+	#login form > div {
+		flex-direction: column;
+		text-align: center;
+	}
+	#login form > div * {
+		width: 100%;
+	}
+}
